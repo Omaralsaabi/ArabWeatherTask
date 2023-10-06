@@ -7,7 +7,7 @@ from PIL import Image
 import os
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-model_path = os.path.join(os.getcwd(), 'model/best_model.pth')
+model_path = os.path.join(os.getcwd(), 'model/resnet18_finetuned.pth')
 
 class_names = ['dew', 'fogsmog', 'frost', 'glaze', 'hail', 'lightning', 'rain', 'rainbow', 'rime', 'sandstorm', 'snow']
 
@@ -21,10 +21,10 @@ def load_fine_tuned_resnet():
 
 def predict_image(image):
     transform = transforms.Compose([
-        transforms.Resize((224, 224)),
-        transforms.ToTensor(),
-        transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
-        ])
+    transforms.Resize((300, 400)),
+    transforms.ToTensor(),
+    transforms.Normalize((0.5,), (0.5,))
+])
     image = Image.open(image)
     image = transform(image).unsqueeze(0).to(DEVICE)
     model = load_fine_tuned_resnet()

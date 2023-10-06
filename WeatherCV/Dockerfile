@@ -3,7 +3,7 @@ FROM python:3.10
 
 # Set environment variables
 ENV PYTHONUNBUFFERED 1
-ENV DJANGO_SETTINGS_MODULE projectname.settings
+ENV DJANGO_SETTINGS_MODULE WeatherCV.settings
 
 # Create and set the working directory
 RUN mkdir /code
@@ -19,4 +19,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8000
 
 # Run the command to start the Django app
-CMD ["python3", "manage.py", "runserver"]
+CMD ["gunicorn", "--bind", ":8000", "WeatherCV.wsgi:application"]
