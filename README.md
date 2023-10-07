@@ -11,12 +11,12 @@ ArabWeatherTask is more than just a project; it's an adventure in data science a
 1. Get the Code:
 - Clone the repo to your local machine:
 ```
-git clone https://github.com/Omaralsaabi/ArabWatherTask.git
+git clone https://github.com/Omaralsaabi/ArabWeatherTask.git
 ```
 2. Set Up Your Environment:
 - Enter the repo directory:
 ```
-cd ArabWatherTask
+cd ArabWeatherTask
 ```
 - Create a virtual environment: 
 ```
