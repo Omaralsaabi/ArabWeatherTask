@@ -1,27 +1,69 @@
-# ArabWatherTask
-This is a simple demosntration of training a Tabular and Image data related to weather. 
+[![Connect with me on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=LinkedIn&style=flat-square)](https://www.linkedin.com/in/omar-alsaabi-32675b193/)
 
-## How to run the code
-1. Clone the repo to your local machine using `git clone https://github.com/Omaralsaabi/ArabWatherTask.git`
-2. Enter the repo directory using `cd ArabWatherTask`
-3. Create a virtual environment using `python3 -m venv venv`
-4. Activate the virtual environment using `source venv/bin/activate`
-5. Install the requirements using `pip install -r requirements.txt`
+
+# 🌦️ ArabWeatherTask: Where Data Meets Weather Magic 🌦️
+Welcome to ArabWeatherTask, a delightful journey into the world of data and weather! 🚀
+
+### Prject Overview:
+ArabWeatherTask is more than just a project; it's an adventure in data science and meteorology. We've blended the power of Tabular and Image data to bring you insights into weather like never befor
+
+# How to Get Started:
+1. Get the Code:
+- Clone the repo to your local machine:
+```
+git clone https://github.com/Omaralsaabi/ArabWatherTask.git
+```
+2. Set Up Your Environment:
+- Enter the repo directory:
+```
+cd ArabWatherTask
+```
+- Create a virtual environment: 
+```
+python3 -m venv venv
+```
+- Activate the virtual environment:
+```
+source venv/bin/activate
+```
+- Install the requirements 
+```
+pip install -r requirements.txt
+```
 
 ### Tabular Model
-1. Enter the tabular directory using `cd WeatherTabular`
-2. Have a look at the training notebook `train.ipynb` and the prediction notebook `predict.ipynb`
+1. Explore the Data:
+- Enter the data directory:
+```
+cd WeatherTabular
+```
+- Dive into the training notebook `train.ipynb` and the prediction notebook `predict.ipynb`.
 
 ### Image Model 
-1. Enter the image directory using `cd WeatherCV`
-2. Have a look at the CNN training notebook `CVWeather-CNN.ipynb` and the ResNet training notebook `CVWeather-ResNet-Finetuned.ipynb`
-3. Run the server using `python3 manage.py runserver`
-4. Open the browser and go to `http://localhost:8000/predict`
-5. Upload an image and click on predict
+1. Visualize Weather:
+- Enter the image directory:
+```
+cd WeatherCV
+```
+- Immerse yourself in the CNN training notebook `CVWeather-CNN.ipynb` and the ResNet training notebook `CVWeather-ResNet-Finetuned.ipynb`.
+- Ready for some real magic? Run the server:
+```
+python3 manage.py runserver
+```
+- Open your browser and journey to `http://localhost:8000/predict`. Upload an image and let the weather predictions begin!
 
-## How to run the code using Docker image
-1. Pull the docker image using `docker pull docker pull omaralsaabi/weathercv`
-2. Run the docker image using `docker run -p 8000:8000 omaralsaabi/weathercv`
-3. Open the browser and go to `http://localhost:8000/predict`
+## Docker Magic:
+Want to make things even simpler? We've got you covered!
 
-For any questions, please contact me at: `prof.omaralsaabi@gmail.com`
+1. Dockerize Your Experience:
+- Pull the docker image:
+```
+docker pull omaralsaabi/weathercv
+```
+- Launch the Docker container:
+```
+docker run -p 8000:8000 omaralsaabi/weathercv
+```
+- Explore weather insights at `http://localhost:8000/predict`.
+
+For any questions, ideas, reach out to me at : `prof.omaralsaabi@gmail.com`.
